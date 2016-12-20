@@ -1,0 +1,12 @@
+node_modules
+coverage
+logs
+.nyc_output
+*.DS_Store
+*.env
+*.log
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
