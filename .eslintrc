@@ -1,6 +1,9 @@
 {
   "root": true,
   "extends": "eslint:recommended",
+  "plugins": [
+    "graphql"
+  ],
   "env": {
     "node": true,
     "es6": true

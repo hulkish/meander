@@ -1,12 +1,12 @@
 {
-  "name": "@hulkish/geocoding-exercise-app",
+  "name": "@hulkish/meander",
   "version": "1.0.0",
   "description": "geocoding exercise app",
   "author": "Steven Hargrove <steven.hargrove@gmail.com>",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/hulkish/geocoding-exercise-app.git"
+    "url": "https://github.com/hulkish/meander.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -27,5 +27,9 @@
     "passport": "^0.3.2",
     "pug": "^2.0.0-beta6",
     "winston": "^2.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.12.2",
+    "eslint-plugin-graphql": "^0.4.3"
   }
 }

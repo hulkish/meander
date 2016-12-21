@@ -1,4 +1,4 @@
-# geocoding-exercise-app
+# meander
 
 ## Prerequisites
 * Node.js >= 6.9.2
