@@ -6,7 +6,6 @@ const schema = require('./schema');
 
 const app = express.Router();
 
-
 app.use('/', graphqlHTTP(req => ({
   schema: schema,
   graphiql: true,

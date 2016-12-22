@@ -1,10 +1,13 @@
 'use strict';
 
-// function DefaultMiddleware(req, res, next) {
-//   if (!req.accepts('json')) {
-//
-//   }
-//   next();
-// }
-//
-// module.exports = DefaultMiddleware;
+const helmet = require('helmet');
+const compression = require('compression');
+const loggingMiddleware = require('./logging');
+
+const middleware = () => [
+  helmet(),
+  loggingMiddleware(),
+  compression(),
+];
+
+module.exports = middleware;

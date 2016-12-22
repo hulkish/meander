@@ -5,7 +5,7 @@ if (!process.env.hasOwnProperty('GOOGLE_MAPS_API_KEY')) {
 }
 
 const config = {
-  apiKey: process
+  apiKey: process.env.GOOGLE_MAPS_API_KEY
 };
 
 module.exports = config;

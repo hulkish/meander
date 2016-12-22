@@ -5,8 +5,11 @@ const logger = require('../lib/logger');
 
 function loggingMiddleware() {
   return morgan('combined', {
-    immediate: true,
-    stream: logger.stream
+    stream: {
+      write(message) {
+        logger.info('(morgan)', message);
+      }
+    }
   });
 }
 
