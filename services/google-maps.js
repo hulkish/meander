@@ -21,7 +21,6 @@ class GoogleMapsService extends EventEmitter {
     return this.client.placesNearby({ keyword, location, language, rankby, opennow, })
     .asPromise()
     .then(data => {
-      logger.info('data', data);
       return data.json.results;
     })
     .catch(err => logger.error(err));

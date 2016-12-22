@@ -7,7 +7,7 @@ function loggingMiddleware() {
   return morgan('combined', {
     stream: {
       write(message) {
-        logger.info('(morgan)', message);
+        logger.info(message);
       }
     }
   });
